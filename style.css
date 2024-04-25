@@ -1,0 +1,100 @@
+body{
+  margin: 0px;
+  font-family: 'Open-Sans', sans-serif;
+  background: linear-gradient(0deg, rgba(178,227,240,1) 0%, rgba(249,236,254,1) 35%);
+  min-height: 100vh; /* Estou dizendo que minha altura minima deve ser 100% da tela*/
+  min-width: 100vh;
+}
+nav {
+  display: flex; /*Todo o cabeçalho deixa de ser lista e passa a ser lado a lado*/
+  justify-content: space-between; /*Alinhar um lado com o outro lado do menu*/
+  align-items: center; /*Alinhar o lado esquerdo ao lado direito*/
+  margin-bottom: 55px;
+  font-weight: bold;
+}
+.page{
+  width: 1000px;
+  margin: 0 auto;
+  padding-top: 65px;
+}
+ul{
+  list-style: none; /*Tirar os marcadores de lista º*/
+  display: flex; /*Botar os itens da lista lado a lado*/
+  gap: 48px; /*Definir espaços entre os itens da lista*/
+  margin: 0px;
+  padding: 0px;
+}
+a{
+  color: #1F1534;
+  text-decoration: none;/*Tirar o sublinhado do link*/
+}
+ul li a{
+  opacity: 0.5; /*Fazer o elm ficarem um pouco mais claro.*/
+}
+ul li a:hover{ /*Sempre que tiver o hover, é uma ação para transfomar o elemento em negrito quando eu passar o mouse*/
+  font-weight: bold; /*Ficar em negrito ao passar o mouse.*/
+  opacity: 1;
+}
+
+h1,ul{
+  font-family: 'Mulish', sans-serif;
+}
+main{
+  display: flex; /* A imagem e o texto passam a ser lado a lado*/
+  align-items: center;
+  justify-content: space-between; /*A CX de texto e a imagem se alinham uma em cada canto com espaço entre elas*/
+}
+h1{
+  font-size: 49px;
+  line-height: 56px;
+  color: #1F1534;
+  font-weight: normal;
+}
+h1 span{
+  color: #89C5CC;
+  font-weight: bold;
+}
+p{
+  font-size: 14px;
+  line-height: 28px;
+  color: #7D7987;
+}
+button{
+  color: white;
+  text-transform: uppercase; /*Transformar o texto já escrito em maiúsculo*/
+  font-family: 'Open-Sans', sans-serif;
+ 
+  background: #69B99D;
+  border: 0;
+  padding: 14px 32px 15px;
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+button:hover{
+  background: #4ea788;
+  transform: scale(1.15);
+}
+footer{
+  font-size: 14px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 80px;
+}
+footer a{
+  font-weight: bold;
+}
+section p{
+    margin: 40px opx;
+}
+#balls{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
